@@ -3,7 +3,6 @@ const signInPage = document.querySelector('.block-sign-in');
 const exitBtn = document.querySelector('[data-exit]');
 
 if (exitBtn) {
-    console.log('LOL');
     exitBtn.addEventListener('click', () => {
         document.querySelector('.user').remove();
         document.querySelector('.login').style['display'] = 'flex';
@@ -43,7 +42,7 @@ document.querySelector('[data-submit]').addEventListener('click', () => {
         const local = localStorage.getItem(`user${i}`);
         const parseUser = JSON.parse(local);
         
-        if (userLogin === parseUser.userLogin || userPassword === parseUser.userPassword) {
+        if (userLogin === parseUser.userLogin && userPassword === parseUser.userPassword) {
             const html =    `<div class="user">
                                 <div class="photo">
                                     <img src="assets/images/Sample_User_Icon.png" width="100" height="100">
