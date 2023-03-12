@@ -1,5 +1,5 @@
 if (localStorage.length > 0) {
-    for (let i = 1; i < localStorage.length + 1; i++) {
+    for (let i = 1; i < 2; i++) {
         const local = localStorage.getItem(`user${i}`);
         const parseUser = JSON.parse(local);
         const html =    `<div class="user">
