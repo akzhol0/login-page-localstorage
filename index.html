@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/css_main/style.css">
+        <link rel="stylesheet" href="assets/css/css_media/media.css">
+        <link rel="shortcut icon" href="assets/favicon/icon.ico" type="image/x-icon">	
+        <title>Site</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header-wrapper">
+                    <div class="brand">BRAND</div>
+                    <div class="login">
+                        <a href="register.html"><button data-regs>REGISTER</button></a>
+                        <button data-sign>SIGN IN</button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="main-wrapper">
+                    <div class="block-sign-in add">
+                        <div class="input-container">
+                            <h2>LOGIN</h2>
+                            <div class="input-wrapper">
+                                <input data-login id="login" placeholder="Login" type="text">
+                            </div>
+                            <div class="input-wrapper">
+                                <input data-password id="password" placeholder="Password" type="password">
+                                <img data-img src="assets/images/eyes.png" width="25" height="25">
+                            </div>
+                            <div class="button-wrapper">
+                                <button data-submit>SIGN IN</button>
+                            </div>
+                            <div id="res"></div>
+                        </div>
+                    </div> 
+                </div>
+            </main>
+            <footer></footer>
+        </div>
+
+        <script src="java_script/checkUser.js"></script>
+        <script src="java_script/core.js"></script>
+    </body>
+</html>

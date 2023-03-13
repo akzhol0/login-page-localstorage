@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1300px) {
+    .block-sign-in {
+        left: 60%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .block-sign-in {
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .block-sign-in {
+        left: 20%;
+    }
+    .header-wrapper {
+        justify-content: center;
+    }
+    .header-wrapper .brand {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .block-sign-in {
+        left: auto;
+    }
+}
